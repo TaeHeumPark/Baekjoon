@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Main {
 	
+	static StringBuilder sb = new StringBuilder();
+	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -27,9 +29,10 @@ public class Main {
 		}
 		
 		for(int i = 1; i <= number; i++) {
-			System.out.print(basket[i]+ " ");
+			sb.append(basket[i]).append(" ");
 		}
 		
+		System.out.print(sb.toString());
 	}
 
 }
